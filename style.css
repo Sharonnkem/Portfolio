@@ -46,12 +46,6 @@ header {
   transition: all .50s ease;
 }
 
-header.sticky {
-  background: var(--bg-color);
-  box-shadow: 0.1rem 1rem rgba(0, 0, 0, 2);
-  padding: 16px 16%;
-}
-
 .logo {
   font-size: 36px;
   color: var(--text-color);
@@ -456,9 +450,6 @@ form .send-btn:hover {
   header {
     padding: 20px 5%;
   }
-  header.sticky {
-    padding: 14px 5%;
-  }
   section {
     padding: 90px 5% 80px;
   }
@@ -539,7 +530,7 @@ form .send-btn:hover {
     text-align: center;
   }
 .about-img img {
-  width: 50%;
+  width: 40%;
   height: 33vh;
 }
 .exp-area {
@@ -557,7 +548,7 @@ form .send-btn:hover {
 }
 }
 
-@media (max-width: 477px) {
+@media (max-width: 500px) {
   :root{
     --h1-font: 0.8rem;
     --h2-font: 1rem;
@@ -578,7 +569,7 @@ form .send-btn:hover {
   }
   /* Hero Section*/
   .hero {
-    height: 35vh;
+    height: 40vh;
     background-position: 55%;
   }
   .main-content h4 {
@@ -593,7 +584,7 @@ form .send-btn:hover {
   .main-content p {
     font-size: 0.5rem;
     font-weight: 400;
-    width: 65%;
+    width: 60%;
     color: var(--other-color);
     line-height: 13px;
     margin-bottom: 1px;
@@ -615,8 +606,8 @@ form .send-btn:hover {
 
   /*About Section*/
   .about-img img {
-    width: 60%;
-    height: 30vh;
+    width: 45%;
+    height: 20vh;
   }
   .exp-area {
     margin-bottom: 30px;
