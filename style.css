@@ -446,7 +446,7 @@ form .send-btn:hover {
 }
 
 /* Start Media Query */
-@media (max-width: 820px) {
+@media (max-width: 1200px) {
   :root{
     --h1-font: 3rem;
     --h2-font: 2.0rem;
@@ -591,11 +591,11 @@ form .send-btn:hover {
     line-height: 1;
   }
   .main-content p {
-    font-size: var(--p-font);
+    font-size: 0.4rem;
     font-weight: 400;
     width: 65%;
     color: var(--other-color);
-    line-height: 10px;
+    line-height: 13px;
     margin-bottom: 1px;
   }
   .social {
@@ -615,8 +615,8 @@ form .send-btn:hover {
 
   /*About Section*/
   .about-img img {
-    width: 50%;
-    height: 23vh;
+    width: 100%;
+    height: 40vh;
   }
   .exp-area {
     margin-bottom: 30px;
