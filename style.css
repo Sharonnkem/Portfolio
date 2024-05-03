@@ -287,6 +287,28 @@ span {
   transform: translateY(-5px) scale(1.03);
 }
 
+/* Skills Section*/
+.skill {
+  display: grid;
+  grid-template-columns: 1fr 0fr;
+  align-items: center;
+  justify-content: center;
+  gap: 2.3rem;
+  padding: 5rem 10rem;
+  margin-top: 4.2rem;
+  background: #2d343f;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px var(--main-color);
+  transition: all .05s ease;
+  cursor: pointer;
+}
+
+.skill:hover {
+  border: 1px solid var(--main-color);
+  transform: translateY(-5px) scale(1.03);
+}
+
 /* Portfolio Section */
 
 .portfolio {
@@ -529,23 +551,23 @@ form .send-btn:hover {
     gap: 2rem;
     text-align: center;
   }
-.about-img img {
-  width: 40%;
-  height: 33vh;
-}
-.exp-area {
-  margin-bottom: 30px;
-}
+  .about-img img {
+    width: 40%;
+    height: 33vh;
+  }
+  .exp-area {
+    margin-bottom: 30px;
+  }
 
-.exp-area p{
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 32px;
-}
-/* Service Section */
-.aji {
-  height: 4.5vh;
-}
+  .exp-area p{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 32px;
+  }
+  /* Service Section */
+  .aji {
+    height: 4.5vh;
+  }
 }
 
 @media (max-width: 500px) {
@@ -615,7 +637,7 @@ form .send-btn:hover {
   .exp-area p{
     font-weight: 400;
     font-size: 15px;
-    line-height: 32px;
+    line-height: 25px;
   }
   /* Service Section*/
   .aji {
