@@ -39,7 +39,7 @@ export const projects = [
       "Delivers notifications for residents, admins, and payment events",
     ],
     stack: ["React", "Tailwind CSS", "Node.js", "SaaS UI"],
-    githubLabel: "GitHub Placeholder",
+    githubUrl: "https://github.com/Sharonnkem/EstateFlow-AI",
     demoUrl: "https://estate-flow-ai-ten.vercel.app/login",
     theme: themes.blue,
     mockup: [
@@ -186,7 +186,7 @@ export const projects = [
     category: "Commerce experience",
     badge: "Client Work",
     summary:
-      "An e-commerce website with product browsing, cart features, and checkout flow.",
+      "A responsive e-commerce website with product-focused browsing, image galleries, sliders, add-to-cart interactions, and a streamlined checkout experience.",
     features: [
       "Built the user interface with HTML, CSS, and JavaScript",
       "Designed image galleries and product sliders for stronger engagement",
