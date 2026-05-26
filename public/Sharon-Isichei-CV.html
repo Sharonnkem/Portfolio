@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharon Isichei CV</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --text: #111827;
+        --muted: #4b5563;
+        --line: #dbe3f0;
+        --brand: #79bdff;
+        --brand-deep: #1f79ff;
+        --surface: #f8fbff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--text);
+        background: #eef5ff;
+      }
+
+      .page {
+        width: 100%;
+        max-width: 900px;
+        margin: 24px auto;
+        background: #ffffff;
+        border: 1px solid var(--line);
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+      }
+
+      .topbar {
+        height: 10px;
+        background: linear-gradient(90deg, var(--brand-deep), var(--brand));
+      }
+
+      .content {
+        padding: 40px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .name {
+        font-size: 34px;
+        line-height: 1.1;
+        font-weight: 700;
+      }
+
+      .role {
+        margin-top: 8px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--brand-deep);
+      }
+
+      .summary {
+        margin-top: 16px;
+        max-width: 560px;
+        font-size: 15px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .contact {
+        min-width: 230px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+      }
+
+      .contact h2 {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--brand-deep);
+        margin-bottom: 12px;
+      }
+
+      .contact p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .section {
+        margin-top: 28px;
+      }
+
+      .section-title {
+        margin-bottom: 14px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--brand-deep);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .skill-card {
+        padding: 14px 16px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+      }
+
+      .skill-card h3 {
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+
+      .skill-card p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      .projects {
+        display: grid;
+        gap: 14px;
+      }
+
+      .project {
+        padding: 16px;
+        border: 1px solid var(--line);
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+
+      .project h3 {
+        font-size: 16px;
+      }
+
+      .project .category {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .project p,
+      .project li,
+      .meta p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
+      .project ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+      }
+
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .meta-box {
+        padding: 16px;
+        border: 1px solid var(--line);
+        background: var(--surface);
+      }
+
+      .footer-note {
+        margin-top: 28px;
+        font-size: 12px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        .page {
+          margin: 0;
+          border: 0;
+          box-shadow: none;
+          max-width: none;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .content {
+          padding: 24px;
+        }
+
+        .header,
+        .meta {
+          grid-template-columns: 1fr;
+          display: grid;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <div class="topbar"></div>
+      <div class="content">
+        <header class="header">
+          <div>
+            <h1 class="name">Sharon Isichei</h1>
+            <p class="role">Full Stack Developer</p>
+            <p class="summary">
+              Full Stack Developer based in Lagos, Nigeria. I build responsive websites and web
+              apps with React, Node.js, and JavaScript, with a focus on clean interfaces, useful
+              backend logic, and code that is easy to maintain.
+            </p>
+          </div>
+
+          <aside class="contact">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> isicheisharon97@gmail.com</p>
+            <p><strong>Location:</strong> Lagos, Nigeria</p>
+            <p><strong>GitHub:</strong> github.com/Sharonnkem</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/isichei-sharon-03b6a31b4</p>
+          </aside>
+        </header>
+
+        <section class="section">
+          <h2 class="section-title">Core Skills</h2>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <p>React, JavaScript, TypeScript, Tailwind CSS, responsive UI, Framer Motion</p>
+            </article>
+            <article class="skill-card">
+              <h3>Backend</h3>
+              <p>Node.js, Express APIs, database design, authentication flows, JWT</p>
+            </article>
+            <article class="skill-card">
+              <h3>Workflow</h3>
+              <p>Git, GitHub, Figma handoff, reusable components, maintainable code structure</p>
+            </article>
+            <article class="skill-card">
+              <h3>Focus</h3>
+              <p>Building full stack products from interface to database with clean user flows</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="projects">
+            <article class="project">
+              <div class="project-header">
+                <div>
+                  <h3>EstateFlow-AI</h3>
+                  <p class="category">AI-powered SaaS</p>
+                </div>
+              </div>
+              <p>
+                Estate management platform for payments, complaints, visitors, and resident
+                updates.
+              </p>
+              <ul>
+                <li>Built workflows for estate dues, electricity payments, and resident updates.</li>
+                <li>Added AI-assisted complaint routing and admin-facing management features.</li>
+                <li>Used React, Tailwind CSS, and Node.js.</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <div class="project-header">
+                <div>
+                  <h3>OMK Unwind Spa</h3>
+                  <p class="category">Spa and wellness website</p>
+                </div>
+              </div>
+              <p>Spa website built to showcase services and guide visitors toward booking.</p>
+              <ul>
+                <li>Created a responsive service-focused interface for a wellness brand.</li>
+                <li>Structured the site for easy browsing and booking flow.</li>
+                <li>Used React, Tailwind CSS, and Node.js.</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <div class="project-header">
+                <div>
+                  <h3>Authie</h3>
+                  <p class="category">Authentication platform</p>
+                </div>
+              </div>
+              <p>Authentication app for signup, login, verification, and profile management.</p>
+              <ul>
+                <li>Built account access and identity verification flows.</li>
+                <li>Added profile management and JWT-based authentication.</li>
+                <li>Used React and modern authentication patterns.</li>
+              </ul>
+            </article>
+
+            <article class="project">
+              <div class="project-header">
+                <div>
+                  <h3>Task Master</h3>
+                  <p class="category">Productivity app</p>
+                </div>
+              </div>
+              <p>Task app for creating, searching, filtering, and managing daily work.</p>
+              <ul>
+                <li>Built task creation, deletion, search, and filtering features.</li>
+                <li>Improved usability with responsive layouts and smooth state updates.</li>
+                <li>Used React and state management patterns.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Additional Projects</h2>
+          <div class="meta">
+            <div class="meta-box">
+              <h3>Arcdiff</h3>
+              <p>Architecture portfolio with strong visuals, smooth motion, and project showcase.</p>
+            </div>
+            <div class="meta-box">
+              <h3>Stream Movie Website</h3>
+              <p>Movie discovery website with search, genres, sliders, and responsive design.</p>
+            </div>
+            <div class="meta-box">
+              <h3>Portfolio Website</h3>
+              <p>Personal portfolio for presenting projects, skills, and contact information.</p>
+            </div>
+            <div class="meta-box">
+              <h3>E-commerce Website</h3>
+              <p>Shopping experience with product browsing, cart features, and checkout flow.</p>
+            </div>
+          </div>
+        </section>
+
+        <p class="footer-note">
+          Generated from portfolio content. Add work experience, education, and certifications if
+          you want a job-application version.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
